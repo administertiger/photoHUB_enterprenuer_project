@@ -20,60 +20,106 @@
  
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand mb-0 h1" href="#">Navbar</a>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1" href="main_page.html">PhotoHUB</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Faculty
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Faculty of Agriculture(AG)</a></li>
+                <li><a class="dropdown-item" href="#">Faculty of Engineering(EN)</a></li>
+                <li><a class="dropdown-item" href="#">Faculty of Science(SC)</a></li>
+                <li><a class="dropdown-item" href="#">Faculty of Technology</a></li>
+                <li><a class="dropdown-item" href="#">Faculty of Architecture</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+        </li>
+      </div>
+      <button type="button" class="btn btn-light">ContactUs</button>
+    </nav>
 
     <style>
+      .square {
+      float:left;
+      position: relative;
+      width: 30%;
+      padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+      margin:1.66%;
+      background-position:center center;
+      background-repeat:no-repeat;
+      background-size:cover;
+      }
 
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        }
+      .img1 {background-image: url(images/1.jpg);}
+
+      .white_text {
+          color: white;
+      }
+
+      .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          }
+
+        
     </style>
+
+    <link rel="stylesheet" href="image_colums.css">
 
   </head>
 
   <body>
 
-  <div class="container-fluid py-5"  style="background-image: url(https://images.unsplash.com/photo-1601933470096-0e34634ffcde?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); background-repeat: no-repeat; background-position: top center;" >
-        <div class="container px-4 py-4 my-0" style="background-color: bisque;">
+  <div class="container-fluid py-3"  style="background-image: url(https://images.unsplash.com/photo-1601933470096-0e34634ffcde?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); background-repeat: no-repeat; background-position: top center; position: relative; ">
+        <div class="container px-4 py-2 " style="background-color: orange;">
             <div class="row">
-                <div class="col-sm">
+                <div class="col-5">
                        
                     <div class="container">
                         <div class="row">
                             <div class="col-2">
-                                <i style="font-size:24px" class="fa" style="position: center;">&#xf041;</i>
+                                <i style="font-size:24px; padding-top: 50%; float: right; " class="fa">&#xf041;</i>
                         </div>
-                        <div class="col-10">535/1 Kaenthongtani 2 Khonkaen 40000 <br> 123 </div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="fa fa-phone" aria-hidden="true" style="padding: 50%;"></i>
-                        </div>
-                        <div class="col-10">+66 956525984 <br> MIN - FRI,8AM - 7PM </div> 
+                        <div class="col-10"><p style="padding-top: 5%; overflow: hidden;"> 535/1 Kaenthongtani2 Village, Banpen Sub-district, Mueng district, Khonkaen, 40000  </p></div> 
                         </div>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-3">
                     <div class="container">
                         <div class="row">
                             <div class="col-2">
-                            <i style='font-size:24px' class='fa'>&#xf27a;</i>
+                                <br>
+                                <i class="fa fa-phone" aria-hidden="true" style="padding-top: 50%;"></i>
                         </div>
-                        <div class="col-10">TIGERSURAPAT@GMAIL.COM <br> REPLY IN 24 HOURS </div> 
+                        <div class="col-10"><p style="padding-top: 10%; overflow: hidden;">+66 956525984 <br> MIN - FRI,8AM - 7PM</p> </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                            <i style='font-size:24px; padding-top: 70%;' class='fa'>&#xf27a;</i>
+                        </div>
+                        <div class="col-10"><p style="padding-top: 7%; overflow: hidden;">TIGERSURAPAT@GMAIL.COM <br> REPLY IN 24 HOURS</p> </div> 
                         </div>
                     </div>
 
@@ -82,31 +128,73 @@
         </div>
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg">
+                <div class="col-4">
 
                 </div>
-                <div class="col-sm">
-                    <img src="images/Tiger.jpg" style="border-radius: 50%; width: 60%; height: auto;"  class="center">
+                <div class="col-4">
+                    
+                  <img src="images/Tiger.jpg" style="border-radius: 50%; width: 50%; height: auto;"  class="center">
+                  <br>
+                  <h1 class="white_text" style="text-align: center;">Surapat Pongsuwan</h1>
+                    
                 </div>
-                <div class="col-lg">
+                <div class="col-4">
                     
                 </div>
             </div>
         </div>
                 
-            </div>
-        </div>
-    </div>
+  </div>
+  
 
 
 
     
-
-
-
-
-
-
+    <!-- Header -->
+<div class="header">
+    <h1>My Portfolio </h1>
+    <p style="color: darkgray;">MY WORK</p>
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img id="myImg" src="images/1.jpg" style="width:100%">
+      <img src="images/2.jpg" style="width:100%">
+      <img src="images/3.jpg" style="width:100%">
+      <img src="images/4.jpg" style="width:100%">
+      <img src="images/5.jpg" style="width:100%">
+      <img src="images/6.jpg" style="width:100%">
+      <img src="#" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images/3.jpg" style="width:100%">
+      <img src="images/4.jpg" style="width:100%">
+      <img src="images/6.jpg" style="width:100%">
+      <img src="images/2.jpg" style="width:100%">
+      <img src="images/Tiger.jpg" style="width:100%">
+      <img src="images/1.jpg" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="images/6.jpg" style="width:100%">
+      <img src="images/1.jpg" style="width:100%">
+      <img src="images/5.jpg" style="width:100%">
+      <img src="images/3.jpg" style="width:100%">
+      <img src="images/2.jpg" style="width:100%">
+      <img src="images/4.jpg" style="width:100%">
+      <img src="#" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images/1.jpg" style="width:100%">
+      <img src="images/3.jpg" style="width:100%">
+      <img src="images/5.jpg" style="width:100%">
+      <img src="images/Tiger.jpg" style="width:100%">
+      <img src="images/2.jpg" style="width:100%">
+      <img src="images/4.jpg" style="width:100%">
+    </div>
+  </div>
+  
+    
 
 
 
