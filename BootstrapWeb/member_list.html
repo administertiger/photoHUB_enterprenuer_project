@@ -15,44 +15,10 @@
 
     <title>Member List</title>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand mb-0 h1" href="main_page.html">PhotoHUB</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Faculty
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Faculty of Agriculture(AG)</a></li>
-                <li><a class="dropdown-item" href="#">Faculty of Engineering(EN)</a></li>
-                <li><a class="dropdown-item" href="#">Faculty of Science(SC)</a></li>
-                <li><a class="dropdown-item" href="#">Faculty of Technology</a></li>
-                <li><a class="dropdown-item" href="#">Faculty of Architecture</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
-        </li>
-      </div>
-      <button type="button" class="btn btn-light">ContactUs</button>
-    </nav>
-
       <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         
       <style>
           /* Overlay */
@@ -81,23 +47,40 @@
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-}
+      }
+
+      .imgpro {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      
       </style>
       
     
   </head>
   
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1" href="main_page.html">PhotoHUB</a>
+        <i class='fas fa-chalkboard-teacher' style='font-size:36px'></i>
+      
+      <button type="button" class="btn btn-light">ContactUs</button>
+    </nav>
+
+
+    <!-- Person card -->
 
     <div class="container py-3 px-4">
         <div class="row">
             
-            <div class="col-2 px-0">
-                <a href="profile.html">
-                  <img src="images/Tiger.jpg" width="100%" height="auto" class="float-left" style="border-radius: 50%;">
-                </a>
-                
-                
+            <div class="col-2 px-0">  
+              <a href="profile.html">
+                <img class="imgpro" src="images/Tiger.jpg">
+              </a>        
             </div>
             <div class="col-7 px-0">
                 <div class="row">
@@ -171,13 +154,13 @@
         <div class="row">
             
             <div class="col-2 px-0">
-                <img src="images/Tiger.jpg" width="100%" height="auto" class="float-left" style="border-radius: 50%;">
+                <img src="images/Parn.jpg" width="100%" height="auto" class="float-left" style="border-radius: 50%;">
             </div>
             <div class="col-7 px-0">
                 <div class="row">
                     <div class="col-6 px-5">
                         <h3> About me </h3> 
-                        <strong> Name </strong>: Surapat pongsuwan<br>
+                        <strong> Name </strong>: Natthajak Singyabut<br>
                         <strong> Faculty </strong>: Engineer <br>
                         <strong> เรทราคา </strong>: ผู้ชาย 15,000 ครึ่งวัน / ผู้หญิง 150 เต็มวัน
                     </div>
@@ -245,13 +228,13 @@
         <div class="row">
             
             <div class="col-2 px-0">
-                <img src="images/Tiger.jpg" width="100%" height="auto" class="float-left" style="border-radius: 50%;">
+                <img src="images/Ice.jpg" width="100%" height="auto" class="float-left" style="border-radius: 50%;">
             </div>
             <div class="col-7 px-0">
                 <div class="row">
                     <div class="col-6 px-5">
                         <h3> About me </h3> 
-                        <strong> Name </strong>: Surapat pongsuwan<br>
+                        <strong> Name </strong>: Kamchai Trakunchaisit<br>
                         <strong> Faculty </strong>: Engineer <br>
                         <strong> เรทราคา </strong>: ผู้ชาย 15,000 ครึ่งวัน / ผู้หญิง 150 เต็มวัน
                     </div>
